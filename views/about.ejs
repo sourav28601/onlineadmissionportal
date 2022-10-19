@@ -1,0 +1,183 @@
+<%- include('./header.ejs') %>
+
+<style>
+    	*{
+			margin: 0px;
+			padding: 0px;
+		}
+		.z{
+		   height: 600px;
+		   width: 100%;
+		   background-image: url(assets/images/ag3.jpg);
+		   background-repeat: no-repeat;
+		   background-size: cover;
+           background-position: center;
+		}
+		.z h2{
+			margin-top: 200px;
+            color: white;
+            font-size: 65px;
+            font-family: cursive;
+		}
+		.z p{
+			text-align: center;
+			font-family: cursive;
+			color: white;
+			font-size: 19px;
+		}
+		.y{
+			background-color: whitesmoke;
+			border-radius: 20px;
+		}
+		.y hr{
+			width: 30%;
+            border: 1px solid black;
+            margin-left: 185px;
+		}
+		@media(max-width: 700px){
+		.y hr{
+			width: 32%;
+            border: 1px solid black;
+            margin-left: 135px;
+}
+		}
+
+        
+       .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+   
+
+    .featurette-heading {
+      /* font-weight: 300; */
+      line-height: 1;
+      letter-spacing: -.05rem;
+      color:red;
+    }
+
+    @media (min-width: 40em) {
+      .featurette-heading {
+        font-size: 50px;
+      }
+    }
+    @media (max-width: 768px) {
+      .featurette-heading {
+        font-size: 26px;
+      }
+    }
+
+    @media (min-width: 62em) {
+      .featurette-heading {
+        margin-top: 7rem;
+      }
+    }
+
+    @media (min-width: 1400px) {
+
+      .container,
+      .container-lg,
+      .container-md,
+      .container-sm,
+      .container-xl,
+      .container-xxl {
+        max-width: 1320px;
+      }
+    }
+
+    .marketing .col-lg-4 p {
+      margin-right: 0.75rem;
+      margin-left: 0.75rem;
+    }
+    p{
+        font-size: 17px;
+    }
+    
+</style>
+
+<div class="container-fluid z">
+    <div class="row">
+        <div class="col-md-4"></div>
+        <div class="col-md-4">
+            <h2 class="text-center">About us</h2>
+            <p>Let us know about professional courses</p>
+        </div>
+        <div class="col-md-4"></div>
+    </div>
+</div>
+
+<div class="container marketing">
+    <!-- START THE FEATURETTES -->
+
+    <!-- <hr class="featurette-divider"> -->
+<br><br>
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h1 class="text-primary" >About MCA  <span class="text-muted"> It’ll blow your mind.</span>
+        </h1><br>
+        <p>The MCA admission will be done on the basis of merit or entrance examination. The minimum MCA course eligibility criteria is a Bachelor's degree in computer application- BCA, or in any related field with mathematics as a compulsory subject.</p><br>
+            <p>
+                The wide range of career options after MCA include specialized profiles in the software development, hardware technology, systems development, and engineering, troubleshooting, management information system, internet, and networking.</p>
+        <br>
+      </div>
+      <div class="col-md-5">
+          <img src="assets/images/mca.jpg"  class="d-block w-100 "  width="100%" height="100%" alt="">
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h1 class="text-primary"> About MBA  <span class="text-muted"> Checkmate</span>
+        </h1><br>
+        <p> The MBA is the world’s most popular graduate management degree.
+            Employers love it and students can’t get enough of it. Thousands of
+            ambitious professionals apply to different types of MBA program each
+            year.</p><br>
+            <p> The MBA is the world’s most popular graduate management degree.
+                Employers love it and students can’t get enough of it. Thousands of
+                ambitious professionals apply to different types of MBA program each
+                year.</p>
+        <br>
+      </div>
+      <div class="col-md-5 order-md-1">
+   
+        <img src="assets/images/mba.jpg"  class="d-block w-100 "  width="100%" height="100%" alt="">
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h1 class="text-primary"> About M.Tech <span class="text-muted"> Checkmate</span></h1><br>
+        <p>MTech is a professional postgraduate engineering master degree programme awarded to candidates after completion of two years of study in the discipline of engineering. This degree is predicated in a specific branch of engineering.</p><br>
+            <p> In India, Admissions to ME/MTech programmes offered by technical colleges and universities in India is made through a National level/State-level/Institute-level engineering entrance examination.</p>
+        <br>
+      </div>
+      <div class="col-md-5 order-md-1">
+   
+        <img src="assets/images/mtech.jpg"  class="d-block w-100 "  width="100%" height="100%" alt="">
+
+      </div>
+    </div>
+    <hr class="featurette-divider">
+
+
+
+</div>
+
+
+
+<%- include('./footer.ejs') %>

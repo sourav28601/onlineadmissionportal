@@ -1,0 +1,212 @@
+<%- include('../header.ejs') %>
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;800&family=Playfair+Display&family=Poppins:wght@200&family=Roboto:ital@1&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Nunito Sans', sans-serif;
+            font-family: 'Playfair Display', serif;
+            font-family: 'Poppins', sans-serif;
+            font-family: 'Roboto', sans-serif;
+            background-color: rgb(123, 185, 185);
+            background-size: cover;
+        }
+
+        .col-6-background {
+            background-image: url("https://websitedemos.net/love-nature-02/wp-content/uploads/sites/988/2021/11/service-1.jpg");
+            /* background-image: url("images/bg5.jpg"); */
+            height: 112vh;
+            background-size: cover;
+        }
+        .text-1 {
+            margin-top: 15rem;
+        }
+
+        .text-1 h1 {
+            color: #000000;
+        }
+
+        .text-1 p {
+            color: #000000;
+        }
+
+        .text-1 .button {
+            border: 1px solid #000000;
+            padding: 5px 20px;
+            font-size: 20px;
+            background: transparent;
+            border-radius: 20px;
+            color: #fff;
+            margin-top: 10px;
+        }
+
+        .text-1 .button:hover {
+            background: #fff;
+            color: #000000;
+            transition: .3s ease-in-out .5s;
+        }
+       
+    </style>
+
+    <title>Admission form</title>
+</head>
+
+<body>
+    <div class="container container-bg-1 py-3">
+        <div class="row">
+            <!-- 1st col-6 start -->
+            <div class="col-md-6 col-6-background img-fluid">
+                <div class="row overflow-auto">
+                    <div class="col-md-1"></div>
+
+                    <div class="col-md-10">
+
+                        <div class=" text-1 text-white text-center">
+
+                            <h1 class="text-capitalize"> ANS global is a provede best education of India</h1>
+
+                            <P>ANS institute is a leading global business consulting and IT service company. We
+                                provides a full range of maintenance and compliance services for Government and
+                                Commercial facilities both large and small. Whether you need to run your business more
+                                efficiently or accelerate revenue growth, ANS can get you there.</P>
+
+                            <a href=""><button type="button" class=" button"> join us</button></a>
+
+                        </div>
+                    </div>
+
+                    <div class="col-md-1"></div>
+                </div>
+            </div><br>
+            <!-- 1st col-6 start -->
+
+            <!-- scond col-6 start -->
+            <div class="col-md-6">
+                <h2 class="text-center py-2" style="color: orangered;">Student's Application Form</h2>
+                <!-- form start -->
+                <form action="/courseinsert" method="post" class="row g-3" enctype="multipart/form-data" style="margin-left:20px ;">
+
+                    <input type="hidden" class="form-control" name="user_id" value="">
+
+                    <div class="mb-3 col-md-6">
+                        <label class="form-label">Name</label>
+                        <input type="text" class="form-control" name="name" value="<%= n %>"
+                            placeholder="enter your name here*" required>
+                    </div>
+
+                    <div class="mb-3 col-md-6">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control" name="email" value="<%= e %>"
+                            placeholder="enter your email here*" required>
+                    </div>
+
+                    <div class="mb-3 col-md-6">
+                        <label class="form-label">Mobile Number</label>
+                        <input type="text" class="form-control" name="mobile" value=""
+                            placeholder="enter your mobile here*" required>
+                    </div>
+                    <div class="mb-3 col-md-6">
+                        <label class="form-label">Course </label>
+                        <select class="form-select" name="course" value="" required>
+                            <option value="MBA" selected>MBA</option>
+                        </select>
+                    </div>
+
+                 
+
+                    <div class="mb-3  col-md-6">
+                        <label class="form-label">Qualification</label>
+                        <select class="form-select" name="qualification" value="" required>
+                            <option selected>Select Your Qualification </option>
+                            <option>10th</option>
+                            <option>12th</option>
+                            <option>Graduation</option>
+                            <option>Post Graduation</option>
+                          
+                        </select>
+                    </div>
+
+                    <div class="mb-3  col-md-6">
+                        <label class="form-label">College</label>
+                        <select class="form-select" name="college" value="" required>
+                            <option selected>Select Your College</option>
+                            <option>RJIT</option>
+                            <option>ITM</option>
+                            <option>MITS</option>
+                            <option>MPCT</option>
+                            <option>SGSITS</option>
+                            <option>OTHERS</option>
+                        
+                        </select>
+                    </div>
+                    <div class="mb-3  col-md-6">
+                        <label class="form-label">Branch</label>
+                        <select class="form-select" name="branch" value="" required>
+                            <option selected>Select Your Branch </option>General Management.
+                            <option>Marketing</option>
+                            <option>Consulting</option>
+                            <option>Finance</option>
+                            <option>Human Resource Management</option>
+                            <option>Operations Management</option>
+                            <option> Management Information Systems</option>
+                        </select>
+                    </div>
+                    <div class="mb-3  col-md-6">
+                        <label class="form-label">Image</label>
+                        <input type="file" class="form-control" name="image" required>
+                    </div>
+                
+                    <div class="mb-3">
+                        <label class="form-label">Address</label>
+                        <textarea type="text" class="form-control" name="address" value="" placeholder="comment here*"
+                            required></textarea>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Gender</label>
+                        <input type="radio" name="gender" value="male" required>Male
+                        <input type="radio" class="form-check-input" name="gender" value="female" required>Female
+                        <input type="radio" class="form-check-input" name="gender" value="other" required>Other
+                    </div>
+
+                    <button type="submit" class="btn btn"
+                        style="background-color: orangered; color: white;">Submit</button>
+                </form>
+                <!-- form end -->
+            </div>
+            <!-- scond col-6 end -->
+
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<%- include('../footer.ejs') %>
